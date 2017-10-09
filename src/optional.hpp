@@ -305,7 +305,7 @@ namespace detail {
         Is<std::is_constructible<T, U&&>>
       > = Enable
     >
-    optional( U && value )
+    constexpr optional( U && value )
       : initalized_(true)
       , value_(std::forward<U>(value))
     {
