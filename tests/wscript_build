@@ -1,0 +1,8 @@
+bld(
+  features='cxx cxxprogram test',
+  source='optional_ut.cpp',
+  target="optional_ut",
+  defines='CATCH_CONFIG_MAIN=1'
+)
+
+
